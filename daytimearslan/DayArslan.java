@@ -4,6 +4,8 @@ public class DayArslan{
     private String month;
     private int day, year, monthNumber;
     private int currentYear = 2026;
+    //private static final int slashNumericFormat = 1;
+    //private static final int textFormat = 2;
 
     public Day(int dd, int mm, int yyyy){
         this.day = dd;
@@ -78,10 +80,8 @@ public class DayArslan{
                 date = days + "/" + months + "/"+ years; break;
             case 2:
                 days = this.day; months = this.month; years = this.year;
-                date = months + " " + days + ", " + years;
+                date = months + " " + days + ", " + years; break;
         }
-        
-        
     }
 
     public int slashNumericFormat(){return 1;}
